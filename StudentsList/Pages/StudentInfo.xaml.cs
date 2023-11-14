@@ -20,8 +20,9 @@ namespace StudentsList.Pages
     /// </summary>
     public partial class StudentInfo : Page
     {
-        public StudentInfo()
+        public StudentInfo(Student student)
         {
+            DataContext = student;
             InitializeComponent();
         }
     }

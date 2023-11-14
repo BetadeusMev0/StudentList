@@ -31,13 +31,13 @@ namespace StudentsList.Pages
         private MV mv = new MV();
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(((Student)(((Button)sender).DataContext)).Name); // ОЧЕНЬ ВАЖНО
+            //MessageBox.Show(((Student)(((Button)sender).DataContext)).Name); // ОЧЕНЬ ВАЖНО
+
+            
 
 
 
-
-
-            //((MainWindow)Tag).mainFrame.Navigate(Student.GetStudentsExample()[0].ImgPath);
+            ((MainWindow)Tag).mainFrame.Navigate( new StudentsList.Pages.StudentInfo(((Student)(((Button)sender).DataContext))));
         }
     }
 }

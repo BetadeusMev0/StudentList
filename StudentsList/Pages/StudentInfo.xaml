@@ -13,7 +13,13 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
-        <Image x:Name="ProfileImage"></Image>
-        <TextBlock Text="{Binding Name}"/>
+        <Image x:Name="ProfileImage" Source="{Binding ImgPath}"></Image>
+
+        <StackPanel Grid.Column="1">
+            <TextBlock x:Name="tblStdName" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBlock x:Name="tblStdGroup" Text="{Binding Group, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBlock x:Name="tblStdAge" Text="{Binding Age, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBlock x:Name="tblStdGender" Text="{Binding Gender, UpdateSourceTrigger=PropertyChanged}"/>
+        </StackPanel>
     </Grid>
 </Page>
