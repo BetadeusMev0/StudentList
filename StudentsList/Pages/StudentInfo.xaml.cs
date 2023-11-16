@@ -25,5 +25,10 @@ namespace StudentsList.Pages
             DataContext = student;
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ((MainWindow)Tag).mainFrame.Navigate(((MainWindow)Tag).studentsPage);
+        }
     }
 }

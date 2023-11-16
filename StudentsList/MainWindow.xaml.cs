@@ -24,19 +24,24 @@ namespace StudentsList
         {
             InitializeComponent();
 
-            var studentsPage = new StudentsList.Pages.StudentsView(mv);
+            studentsPage = new StudentsList.Pages.StudentsView(mv);
             studentsPage.Tag = this;
             mainFrame.Navigate(studentsPage);
         }
-        MV mv = new MV();
+        public MV mv = new MV();
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
         }
-
+       public  StudentsList.Pages.StudentsView studentsPage;
         private void btnMainMenu_Click(object sender, RoutedEventArgs e)
         {
-            
+            mainFrame.Navigate(studentsPage);
+        }
+
+        private void btnAddStudent_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Navigate(new StudentsList.Pages.AddStudent() {Tag = this });
         }
     }
 }

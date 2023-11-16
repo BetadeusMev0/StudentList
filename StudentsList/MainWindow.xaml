@@ -12,6 +12,8 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Button x:Name="btnMainMenu" HorizontalAlignment="Left" Content="Main Menu" Click="btnMainMenu_Click"/>
-        <Frame Grid.Row="1" x:Name="mainFrame"></Frame>
+        <Button Margin="65 0 0 0" x:Name="btnAddStudent" HorizontalAlignment="Left" Content="Add Student" Click="btnAddStudent_Click"/>
+        <Frame Grid.Row="1" x:Name="mainFrame" NavigationUIVisibility="Hidden"></Frame>
+        
     </Grid>
 </Window>

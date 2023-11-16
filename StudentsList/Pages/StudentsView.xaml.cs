@@ -33,11 +33,16 @@ namespace StudentsList.Pages
         {
             //MessageBox.Show(((Student)(((Button)sender).DataContext)).Name); // ОЧЕНЬ ВАЖНО
 
+
+
+            var student = new StudentsList.Pages.StudentInfo( new Student());
             
+            ((MainWindow)Tag).mainFrame.Navigate( new StudentsList.Pages.StudentInfo(((Student)(((Button)sender).DataContext))) {Tag = this.Tag});
+        }
 
-
-
-            ((MainWindow)Tag).mainFrame.Navigate( new StudentsList.Pages.StudentInfo(((Student)(((Button)sender).DataContext))));
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            ((MainWindow)Tag).mv.students.Remove(((Student)(((Button)sender).DataContext)));
         }
     }
 }

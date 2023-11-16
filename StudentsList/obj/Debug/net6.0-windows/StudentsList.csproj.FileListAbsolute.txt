@@ -26,5 +26,5 @@ C:\Users\User\source\repos\StudentsList\StudentsList\obj\Debug\net6.0-windows\Pa
 C:\Users\User\source\repos\StudentsList\StudentsList\obj\Debug\net6.0-windows\Pages\StudentInfo.g.cs
 C:\Users\User\source\repos\StudentsList\StudentsList\obj\Debug\net6.0-windows\Pages\StudentInfo.baml
 C:\Users\User\source\repos\StudentsList\StudentsList\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
-C:\Users\User\source\repos\StudentsList\StudentsList\obj\Debug\net6.0-windows\Pages\MainMenu.g.cs
-C:\Users\User\source\repos\StudentsList\StudentsList\obj\Debug\net6.0-windows\Pages\MainMenu.baml
+C:\Users\User\source\repos\StudentsList\StudentsList\obj\Debug\net6.0-windows\Pages\AddStudent.g.cs
+C:\Users\User\source\repos\StudentsList\StudentsList\obj\Debug\net6.0-windows\Pages\AddStudent.baml

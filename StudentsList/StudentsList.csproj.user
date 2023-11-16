@@ -7,7 +7,7 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Pages\MainMenu.xaml.cs">
+    <Compile Update="Pages\AddStudent.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\StudentInfo.xaml.cs">
@@ -26,7 +26,7 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Pages\MainMenu.xaml">
+    <Page Update="Pages\AddStudent.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\StudentInfo.xaml">
